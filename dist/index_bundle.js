@@ -26,7 +26,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hello_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello.js */ \"./hello.js\");\n/* harmony import */ var _world_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./world.js */ \"./world.js\");\n/* harmony import */ var _test_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./test.css */ \"./test.css\");\n\r\n\r\n\r\ndocument.getElementById('text').innerText=_hello_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]+','+_world_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\r\n\n\n//# sourceURL=webpack://study-webpack/./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hello_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello.js */ \"./hello.js\");\n/* harmony import */ var _world_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./world.js */ \"./world.js\");\n/* harmony import */ var _test_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./test.css */ \"./test.css\");\n/* harmony import */ var _index2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index2 */ \"./index2.js\");\n\r\n\r\n\r\n\r\ndocument.getElementById('text').innerText=_hello_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]+','+_world_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\r\nconsole.log(_index2__WEBPACK_IMPORTED_MODULE_3__.sum(1,2));\r\n// webpack에서 파일을 실행하면 webpack은 전역 범위를 어지럽히지 않으려고 하므로 이 기능은 기본적으로 전역적으로 사용할 수 없습니다.\r\n// JS 파일 범위 밖에서 함수에 액세스할 수 있게 하려면 전역 범위에 넣어야 합니다.\r\nwindow.abc=(params)=> {\r\n    alert(params);\r\n    console.log(_index2__WEBPACK_IMPORTED_MODULE_3__.sum(10,21));\r\n}\r\n\r\n\r\n\n\n//# sourceURL=webpack://study-webpack/./index.js?");
+
+/***/ }),
+
+/***/ "./index2.js":
+/*!*******************!*\
+  !*** ./index2.js ***!
+  \*******************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"sum\": () => (/* binding */ sum)\n/* harmony export */ });\nfunction sum(x, y) {\r\n    console.log(x+','+y);\r\n    return x + y\r\n  }\n\n//# sourceURL=webpack://study-webpack/./index2.js?");
 
 /***/ }),
 
