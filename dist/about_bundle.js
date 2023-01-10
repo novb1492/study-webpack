@@ -6,6 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
+var about_f;
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
@@ -16,7 +17,7 @@
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hello_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello.js */ \"./hello.js\");\n/* harmony import */ var _world_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./world.js */ \"./world.js\");\n\r\n\r\ndocument.getElementById('text').innerText=_world_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]+','+_hello_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\r\n\n\n//# sourceURL=webpack://study-webpack/./about.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"abc\": () => (/* binding */ abc)\n/* harmony export */ });\n/* harmony import */ var _hello_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello.js */ \"./hello.js\");\n/* harmony import */ var _world_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./world.js */ \"./world.js\");\n/* harmony import */ var _index2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index2 */ \"./index2.js\");\n\r\n\r\n\r\ndocument.getElementById('text').innerText=_world_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]+','+_hello_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\r\nfunction abc(params) {\r\n    alert(params);\r\n    console.log(_index2__WEBPACK_IMPORTED_MODULE_2__.sum(13,21));\r\n\r\n}\n\n//# sourceURL=webpack://_f/./about.js?");
 
 /***/ }),
 
@@ -26,7 +27,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hel
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar hello='hello';\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (hello);\n\n//# sourceURL=webpack://study-webpack/./hello.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar hello='hello';\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (hello);\n\n//# sourceURL=webpack://_f/./hello.js?");
+
+/***/ }),
+
+/***/ "./index2.js":
+/*!*******************!*\
+  !*** ./index2.js ***!
+  \*******************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"sum\": () => (/* binding */ sum)\n/* harmony export */ });\nfunction sum(x, y) {\r\n    console.log(x+','+y);\r\n    return x + y\r\n  }\n\n//# sourceURL=webpack://_f/./index2.js?");
 
 /***/ }),
 
@@ -36,7 +47,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar world='world';\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (world);\n\n//# sourceURL=webpack://study-webpack/./world.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar world='world';\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (world);\n\n//# sourceURL=webpack://_f/./world.js?");
 
 /***/ })
 
@@ -101,6 +112,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = __webpack_require__("./about.js");
+/******/ 	about_f = __webpack_exports__;
 /******/ 	
 /******/ })()
 ;

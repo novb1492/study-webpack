@@ -10,5 +10,9 @@ window.abc=(params)=> {
     alert(params);
     console.log(math.sum(10,21));
 }
+//webpack 라이브러리 설정으로 꺼내는 법 이게 좀더 안전할듯 하다
+export function abc2(params){
+    alert(params);
+}
 
 
